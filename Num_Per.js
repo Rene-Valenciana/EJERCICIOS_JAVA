@@ -1,31 +1,30 @@
 let numeros = 4;
-avance = 1;
+let avance = 1;
 let divisores = [];
-perfectos  = [];
-Contador = 1;
+let perfectos = [];
+let contador = 1;
 
 while (true) {
     contador = 1;
     while (contador < avance) {
         if (avance%contador == 0) {
-            divisores. push(contador);
+            divisores.push(contador);
         }
-        Contador++;
+        contador++;
     }
 
-    let verificar = (divisores. reduce((a, b) => a + b, 0 ));
+    let verificar = (divisores.reduce((a, b) => a + b, 0));
 
     if (avance == verificar) {
-        perfectos. push(avance);
+        perfectos.push(avance);
     }
 
     divisores = [];
 
-    if (perfectos. longitud == numeros) {
-        quebrar
-    } 
-    {
+    if (perfectos.length == numeros) {
+        break
+    } else {
         avance++;
     }
 }
-consola. log("Cantidad de perfectos: ", numeros, "Números perfectos: ", perfectos);
+console.log("Cantidad de perfectos: ", numeros, "Números perfectos: ", perfectos);
