@@ -1,25 +1,31 @@
-Muestras = Number(prompt("¿Cuantos numeros desea ver"));
+let numeros = 4;
+avance = 1;
+let divisores = [];
+perfectos  = [];
+Contador = 1;
 
-
-for (i = 1; i<=Muestras;) {
-    n=1
-    for(n=1;n<=i;){
-      div=  
-    }
-     
-    if ( toma>= 24) {
-        hora= -1*(24-toma) 
-        toma= hora
-        if (toma = 0){
-            toma= 0
+while (true) {
+    contador = 1;
+    while (contador < avance) {
+        if (avance%contador == 0) {
+            divisores. push(contador);
         }
-        console.log("toma ", i, ": ", toma, " horas");
-        i= i+1
-        toma=toma+hora_frec
+        Contador++;
     }
-    else {
-        console.log("toma ", i, ": ", toma, " horas");
-        i= i+1
-        toma=toma+hora_frec
+
+    let verificar = (divisores. reduce((a, b) => a + b, 0 ));
+
+    if (avance == verificar) {
+        perfectos. push(avance);
+    }
+
+    divisores = [];
+
+    if (perfectos. longitud == numeros) {
+        quebrar
+    } 
+    {
+        avance++;
     }
 }
+consola. log("Cantidad de perfectos: ", numeros, "Números perfectos: ", perfectos);
